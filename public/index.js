@@ -1,13 +1,30 @@
-// Constructor Function
-function Circle(radius){
-  this.radius = radius; 
-  this.draw = function(){
-    console.log("Draw!!")
-  };
+// Value versus reference types
+
+// let x = {value: 10}; 
+// let y = x; 
+
+// x.value = 20;
+
+let number = {value: 10}; 
+
+function increase(number){
+  number.value ++;
 }
 
-const another = new Circle(5);
-another.draw()
+increase(number);
+console.log(number.value);
+
+// // Constructor Function
+// function Circle(radius){
+//   this.radius = radius; 
+//   this.draw = function(){
+//     console.log("Draw!!")
+//   };
+// }
+
+// const another = new Circle(5);
+// another.draw()
+
 
 // Factory Function
 
